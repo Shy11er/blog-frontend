@@ -20,8 +20,6 @@ export const Home = () => {
     dispatch(fetchTags());
   }, []);
 
-  console.log(posts);
-
   return (
     <>
       <Tabs style={{ marginBottom: 15 }} value={0} aria-label="basic tabs example">
@@ -49,7 +47,7 @@ export const Home = () => {
         )}
         </Grid>
         <Grid xs={4} item>
-          <TagsBlock items={['react', 'typescript', 'заметки']} isLoading={false} />
+          <TagsBlock items={tags.items} isLoading={tags.status === 'loading'} />
           <CommentsBlock
             items={[
               {

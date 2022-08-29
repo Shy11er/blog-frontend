@@ -1,10 +1,15 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Post } from "../components/Post";
 import { Index } from "../components/AddComment";
 import { CommentsBlock } from "../components/CommentsBlock";
 
 export const FullPost = () => {
+  const params = useParams();
+
+  console.log(params)
+
   return (
     <>
       <Post

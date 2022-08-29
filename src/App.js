@@ -9,10 +9,10 @@ function App() {
       <Header />
       <Container maxWidth="lg">
         <Home />
-        {/* <FullPost /> */}
-        {/* <AddPost /> */}
-        {/* <Login /> */}
-        {/* <Registration /> */}
+        <FullPost />
+        <AddPost />
+        <Login />
+        <Registration />
       </Container>
     </>
   );
